@@ -1,4 +1,4 @@
-<div style="overflow: hidden; background-image: url(http://www.johnbowenturf.com/images/mainslider/turf001.jpg); background-repeat: no-repeat; background-size: cover; padding-bottom: 90px; position: fixed; z-index: 1; top: 0; width: 100%;"  class="navbar navbar-expand-lg navbar-light" role="navigation">
+<div style="overflow: hidden; background-image: url(http://www.johnbowenturf.com/images/mainslider/turf001.jpg); background-repeat: no-repeat; background-size: cover; padding-bottom: 30px; position: fixed; z-index: 1; top: 0; width: 100%;"  class="navbar navbar-expand-lg navbar-light" role="navigation">
        <div class="container-fluid">
            <div class="navbar-header">
                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,7 +18,7 @@
                     <li><a style="color: gold; font-size: 20px;" class="nav-link" href="/">Fixtures</a> </li>
                     <li><a style="color: gold; font-size: 20px;" class="nav-link" href="/">Standing</a> </li>
                     <li><a style="color: gold; font-size: 20px;" class="nav-link" href="/">Player stats</a> </li>
-                    <li><a style="color: gold; font-size: 20px;" class="nav-link" href="/">Contact us</a> </li>
+                    <li><a style="color: gold; font-size: 20px;" class="nav-link" href="{{url_for('main.contact')}}">Contact us</a> </li>
                     <li><a style="color: gold; font-size: 20px;" href="{{url_for('main.profile',uname=current_user.username)}}" class="nav-link">{{current_user.username}}</a></li>
                   
                     <li><a style="color: gold; font-size: 20px;" class="nav-link" href="{{url_for('auth.logout')}}">Sign out</a></li>
